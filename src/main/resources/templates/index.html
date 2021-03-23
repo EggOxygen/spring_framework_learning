@@ -138,7 +138,256 @@
                     var htmlStr = _this.generateMenu('',_this.permission);
                     $("#" + eleId).html(htmlStr);
                 });*/
-                var res = '{"count":0,"code":200,"msg":"请求成功","datas":null,"data":[{"css":"fa-users","createTime":1611478413933,"name":"用户管理","permission":"","updateTime":1611478413933,"href":"","id":1,"sort":1,"type":1,"parentId":0,"child":[{"css":"fa-user","createTime":1611478413933,"name":"用户查询","permission":"","updateTime":1611478413933,"href":"/api/getPage?pageName=user/user-list","id":2,"sort":2,"type":1,"parentId":1,"child":[]},{"css":"fa-pencil-square-o","createTime":1611478413933,"name":"修改密码","permission":"sys:user:password","updateTime":1611478413933,"href":"/api/getPage?pageName=user/user-change-password","id":6,"sort":4,"type":1,"parentId":1,"child":[]}]},{"css":"fa-gears","createTime":1611478413934,"name":"系统设置","permission":"","updateTime":1611478413934,"href":"","id":7,"sort":5,"type":1,"parentId":0,"child":[{"css":"fa-cog","createTime":1611478413934,"name":"菜单","permission":"","updateTime":1611478413934,"href":"/api/getPage?pageName=permission/permission-list","id":8,"sort":6,"type":1,"parentId":7,"child":[]},{"css":"fa-user-secret","createTime":1611478413934,"name":"角色","permission":"","updateTime":1611478413934,"href":"/api/getPage?pageName=role/role-list","id":12,"sort":7,"type":1,"parentId":7,"child":[]},{"css":"","createTime":1611478413934,"name":"字典","permission":"","updateTime":1611478413934,"href":"/api/getPage?pageName=dict/dict-list","id":59,"sort":102,"type":1,"parentId":7,"child":[]}]},{"css":"fa-eye","createTime":1611478413934,"name":"数据源监控","permission":"","updateTime":1611478413934,"href":"druid/index.html","id":19,"sort":9,"type":1,"parentId":0,"child":[]},{"css":"fa-file-pdf-o","createTime":1611478413934,"name":"接口swagger","permission":"","updateTime":1611478413934,"href":"swagger-ui.html","id":20,"sort":10,"type":1,"parentId":0,"child":[]},{"css":"fa-wrench","createTime":1611478413934,"name":"代码生成","permission":"generate:edit","updateTime":1611478413934,"href":"/api/getPage?pageName=generate/edit","id":21,"sort":11,"type":1,"parentId":0,"child":[]},{"css":"fa-reorder","createTime":1611478413934,"name":"日志查询","permission":"sys:log:query","updateTime":1611478413934,"href":"/api/getPage?pageName=log/list","id":22,"sort":13,"type":1,"parentId":0,"child":[]},{"css":"","createTime":1611478413934,"name":"数据填报","permission":"","updateTime":1611478413934,"href":"","id":53,"sort":1,"type":1,"parentId":0,"child":[{"css":"","createTime":1611478413934,"name":"数据填报","permission":"sys:report:add","updateTime":1611478413934,"href":"/report/add","id":54,"sort":100,"type":1,"parentId":53,"child":[]},{"css":"","createTime":1611478413934,"name":"填报记录","permission":"","updateTime":1611478413934,"href":"/api/getPage?pageName=home/report-log","id":55,"sort":100,"type":1,"parentId":53,"child":[]}]},{"css":"","createTime":1611478413934,"name":"数据监控","permission":"","updateTime":1611478413934,"href":"","id":56,"sort":2,"type":1,"parentId":0,"child":[{"css":"","createTime":1611478413934,"name":"数据监控","permission":"sys:data:page","updateTime":1611478413934,"href":"/api/getPage?pageName=home/data","id":57,"sort":101,"type":1,"parentId":56,"child":[]}]}]}'
+                // ES6 yyds!
+                var res = `
+                {
+                    "count": 0,
+                    "code": 200,
+                    "msg": "请求成功",
+                    "datas": null,
+                    "data": [
+                        {
+                            "css": "fa-users",
+                            "createTime": 1611478413933,
+                            "name": "用户管理",
+                            "permission": "",
+                            "updateTime": 1611478413933,
+                            "href": "",
+                            "id": 1,
+                            "sort": 1,
+                            "type": 1,
+                            "parentId": 0,
+                            "child": [
+                                {
+                                    "css": "fa-user",
+                                    "createTime": 1611478413933,
+                                    "name": "用户查询",
+                                    "permission": "",
+                                    "updateTime": 1611478413933,
+                                    "href": "/api/getPage?pageName=user/user-list",
+                                    "id": 2,
+                                    "sort": 2,
+                                    "type": 1,
+                                    "parentId": 1,
+                                    "child": []
+                                },
+                                {
+                                    "css": "fa-pencil-square-o",
+                                    "createTime": 1611478413933,
+                                    "name": "修改密码",
+                                    "permission": "sys:user:password",
+                                    "updateTime": 1611478413933,
+                                    "href": "/api/getPage?pageName=user/user-change-password",
+                                    "id": 6,
+                                    "sort": 4,
+                                    "type": 1,
+                                    "parentId": 1,
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "css": "fa-gears",
+                            "createTime": 1611478413934,
+                            "name": "系统设置",
+                            "permission": "",
+                            "updateTime": 1611478413934,
+                            "href": "",
+                            "id": 7,
+                            "sort": 5,
+                            "type": 1,
+                            "parentId": 0,
+                            "child": [
+                                {
+                                    "css": "fa-cog",
+                                    "createTime": 1611478413934,
+                                    "name": "菜单",
+                                    "permission": "",
+                                    "updateTime": 1611478413934,
+                                    "href": "/api/getPage?pageName=permission/permission-list",
+                                    "id": 8,
+                                    "sort": 6,
+                                    "type": 1,
+                                    "parentId": 7,
+                                    "child": []
+                                },
+                                {
+                                    "css": "fa-user-secret",
+                                    "createTime": 1611478413934,
+                                    "name": "角色",
+                                    "permission": "",
+                                    "updateTime": 1611478413934,
+                                    "href": "/api/getPage?pageName=role/role-list",
+                                    "id": 12,
+                                    "sort": 7,
+                                    "type": 1,
+                                    "parentId": 7,
+                                    "child": []
+                                },
+                                {
+                                    "css": "",
+                                    "createTime": 1611478413934,
+                                    "name": "字典",
+                                    "permission": "",
+                                    "updateTime": 1611478413934,
+                                    "href": "/api/getPage?pageName=dict/dict-list",
+                                    "id": 59,
+                                    "sort": 102,
+                                    "type": 1,
+                                    "parentId": 7,
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "css": "fa-eye",
+                            "createTime": 1611478413934,
+                            "name": "数据源监控",
+                            "permission": "",
+                            "updateTime": 1611478413934,
+                            "href": "druid/index.html",
+                            "id": 19,
+                            "sort": 9,
+                            "type": 1,
+                            "parentId": 0,
+                            "child": []
+                        },
+                        {
+                            "css": "fa-file-pdf-o",
+                            "createTime": 1611478413934,
+                            "name": "接口swagger",
+                            "permission": "",
+                            "updateTime": 1611478413934,
+                            "href": "swagger-ui.html",
+                            "id": 20,
+                            "sort": 10,
+                            "type": 1,
+                            "parentId": 0,
+                            "child": []
+                        },
+                        {
+                            "css": "fa-wrench",
+                            "createTime": 1611478413934,
+                            "name": "代码生成",
+                            "permission": "generate:edit",
+                            "updateTime": 1611478413934,
+                            "href": "/api/getPage?pageName=generate/edit",
+                            "id": 21,
+                            "sort": 11,
+                            "type": 1,
+                            "parentId": 0,
+                            "child": []
+                        },
+                        {
+                            "css": "fa-reorder",
+                            "createTime": 1611478413934,
+                            "name": "日志查询",
+                            "permission": "sys:log:query",
+                            "updateTime": 1611478413934,
+                            "href": "/api/getPage?pageName=log/list",
+                            "id": 22,
+                            "sort": 13,
+                            "type": 1,
+                            "parentId": 0,
+                            "child": []
+                        },
+                        {
+                            "css": "",
+                            "createTime": 1611478413934,
+                            "name": "数据填报",
+                            "permission": "",
+                            "updateTime": 1611478413934,
+                            "href": "",
+                            "id": 53,
+                            "sort": 1,
+                            "type": 1,
+                            "parentId": 0,
+                            "child": [
+                                {
+                                    "css": "",
+                                    "createTime": 1611478413934,
+                                    "name": "数据填报",
+                                    "permission": "sys:report:add",
+                                    "updateTime": 1611478413934,
+                                    "href": "/report/add",
+                                    "id": 54,
+                                    "sort": 100,
+                                    "type": 1,
+                                    "parentId": 53,
+                                    "child": []
+                                },
+                                {
+                                    "css": "",
+                                    "createTime": 1611478413934,
+                                    "name": "填报记录",
+                                    "permission": "",
+                                    "updateTime": 1611478413934,
+                                    "href": "/api/getPage?pageName=home/report-log",
+                                    "id": 55,
+                                    "sort": 100,
+                                    "type": 1,
+                                    "parentId": 53,
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "css": "",
+                            "createTime": 1611478413934,
+                            "name": "数据监控",
+                            "permission": "",
+                            "updateTime": 1611478413934,
+                            "href": "",
+                            "id": 56,
+                            "sort": 2,
+                            "type": 1,
+                            "parentId": 0,
+                            "child": [
+                                {
+                                    "css": "",
+                                    "createTime": 1611478413934,
+                                    "name": "数据监控",
+                                    "permission": "sys:data:page",
+                                    "updateTime": 1611478413934,
+                                    "href": "/api/getPage?pageName=home/data",
+                                    "id": 57,
+                                    "sort": 101,
+                                    "type": 1,
+                                    "parentId": 56,
+                                    "child": []
+                                }
+                            ]
+                        },
+                        {
+                            "css": "",
+                            "createTime": 1611478413934,
+                            "name": "设置",
+                            "permission": "",
+                            "updateTime": 1611478413934,
+                            "href": "",
+                            "id": 58,
+                            "sort": 2,
+                            "type": 1,
+                            "parentId": 0,
+                            "child": [
+                                {
+                                    "css": "",
+                                    "createTime": 1611478413934,
+                                    "name": "设置",
+                                    "permission": "sys:settings",
+                                    "updateTime": 1611478413934,
+                                    "href": "/api/getPage?pageName=settings",
+                                    "id": 59,
+                                    "sort": 101,
+                                    "type": 1,
+                                    "parentId": 58,
+                                    "child": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+                `
                 res = JSON.parse(res);
                 _this.permission = res.data;
                 var htmlStr = _this.generateMenu('', _this.permission);
