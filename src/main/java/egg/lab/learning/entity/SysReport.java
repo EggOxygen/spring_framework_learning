@@ -1,9 +1,12 @@
 package egg.lab.learning.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 
 public class SysReport {
 
+  @TableId
   private Long id;
+  // FIXME: 数据库驼峰与下划线混用?
   private java.sql.Date createTime;
   private Long userId;
   private String remark;
